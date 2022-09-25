@@ -1,0 +1,61 @@
+
+.nav-bar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 30px 0 30px;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.search-music-btn-navbar{
+    position: absolute;
+    background-color: green;
+    border-radius: 100px;
+    height: 30px;
+    margin-left: -45px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.nav-bar input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #1d1d1d;
+    border: 1px solid white;
+    padding: 0 10px;
+    color: white;
+}
+
+.nav-bar li {
+    margin: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.profile-name-image-container {
+    display: flex;
+}
+
+.profile-name-image-container-image-container{
+    background-color: #32323d;
+    padding: 4px 4px 0 4px;
+    border-radius: 5px;
+}
+
+.profile-name-image-container-image-container img{
+    width: 30px;
+}
+
+.profile-name-image-container-name-container{
+    display: flex;
+    align-items: center;
+    background-color: #25252d;
+    padding: 6px 8px 6px 8px;
+    border-radius: 0 5px 5px 0 ;
+}

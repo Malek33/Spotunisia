@@ -1,0 +1,198 @@
+
+.music-total-time{
+    position: absolute;
+    font-size: smaller;
+    margin-top: -70px;
+    margin-left: 100px;
+    background-color: #18181d;
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: forestgreen;
+    user-select: none;
+}
+
+.actor-name-in-music-cards{
+    margin: 0;
+    font-size: smaller;
+    opacity: 0.8;
+    text-align: left;
+}
+
+.download-btn-in-music-cards{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 100%;
+    margin-top: -180px;
+    margin-left: 115px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+audio {
+    position: absolute;
+    margin-top: -85px;
+    margin-left: -100px;
+    width: 100px;
+    height: 30px;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure {
+    border: 1px solid black;
+    background-color: forestgreen;
+    width: 30px;
+    flex-shrink: 0;
+    text-indent: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+video::-webkit-media-controls-enclosure {
+    display: none;
+}
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* We use flex-start here to ensure that the play button is visible even
+     * if we are too small to show all controls.
+     */
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    text-align: right;
+    bottom: auto;
+    height: 30px;
+    background-color: forestgreen;
+    border-radius: 5px;
+    /* The duration is also specified in MediaControlElements.cpp and LayoutTests/media/media-controls.js */
+    transition: opacity 0.3s;
+}
+video:-webkit-full-page-media {
+    display: none;
+}
+audio:-webkit-full-page-media, video:-webkit-full-page-media {
+    display: none;
+}
+audio:-webkit-full-page-media::-webkit-media-controls-panel,
+video:-webkit-full-page-media::-webkit-media-controls-panel {
+    display: none;
+}
+audio::-webkit-media-controls-mute-button, video::-webkit-media-controls-mute-button {
+    display: none;
+}
+audio::-webkit-media-controls-overlay-enclosure {
+    display: none;
+}
+video::-webkit-media-controls-overlay-enclosure {
+    display: none;
+}
+video::-webkit-media-controls-overlay-play-button {
+    display: none;
+}
+audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-button {
+    -webkit-appearance: media-play-button;
+    display: flex;
+    flex: none;
+    border: none;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 28px;
+    margin-top: -2px;
+    padding: 0;
+    background-color: initial;
+    color: inherit;
+}
+audio::-webkit-media-controls-timeline-container, video::-webkit-media-controls-timeline-container {
+    display: none;
+}
+audio::-webkit-media-controls-current-time-display, video::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display, video::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+audio::-webkit-media-controls-timeline, video::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls-volume-slider, video::-webkit-media-controls-volume-slider {
+    display: none;
+}
+/* FIXME these shouldn't use special pseudoShadowIds, but nicer rules.
+   https://code.google.com/p/chromium/issues/detail?id=112508
+   https://bugs.webkit.org/show_bug.cgi?id=62218
+*/
+input[type="range" i]::-webkit-media-slider-container {
+    display: none;
+}
+/* The negative right margin causes the track to overflow its container. */
+input[type="range" i]::-webkit-media-slider-container > div {
+    display: none;
+}
+input[type="range" i]::-webkit-media-slider-thumb {
+    display: none;
+}
+audio::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+audio::-webkit-media-controls-toggle-closed-captions-button {
+    display: none;
+}
+video::-webkit-media-controls-toggle-closed-captions-button {
+    display: none;
+}
+audio::-webkit-media-controls-fullscreen-volume-slider, video::-webkit-media-controls-fullscreen-volume-slider {
+    display: none;
+}
+audio::-webkit-media-controls-fullscreen-volume-min-button, video::-webkit-media-controls-fullscreen-volume-min-button {
+    display: none;
+}
+audio::-webkit-media-controls-fullscreen-volume-max-button, video::-webkit-media-controls-fullscreen-volume-max-button {
+    display: none;
+}
+video::-webkit-media-text-track-container {
+    display: none;
+}
+video::cue {
+    display: none;
+}
+video::-webkit-media-text-track-region {
+    display: none;
+}
+video::-webkit-media-text-track-region-container {
+    display: none;
+}
+video::-webkit-media-text-track-region-container.scrolling {
+    display: none;
+}
+video::-webkit-media-text-track-display {
+    display: none;
+}
+video::cue(:future) {
+    display: none;
+}
+video::-webkit-media-text-track-container b {
+    display: none;
+}
+video::-webkit-media-text-track-container u {
+    display: none;
+}
+video::-webkit-media-text-track-container i {
+    display: none;
+}
